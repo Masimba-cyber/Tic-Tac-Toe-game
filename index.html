@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gameContainer">
+    <div id="header">
+      <h1>Tic-Tac-Toe</h1>
+      <div id="modeSelect">
+        <label for="gameMode">Choose Mode: </label>
+        <select id="gameMode">
+          <option value="player">Two Player</option>
+          <option value="computer">Computer vs Player</option>
+        </select>
+      </div>
+      <div id="scoreBoard">
+        <p id="scoreX">Player X: 0</p>
+        <p id="scoreO">Player O: 0</p>
+      </div>
+    </div>
+
+    <div id="gameBoard">
+      <div class="square" id="0"></div>
+      <div class="square" id="1"></div>
+      <div class="square" id="2"></div>
+      <div class="square" id="3"></div>
+      <div class="square" id="4"></div>
+      <div class="square" id="5"></div>
+      <div class="square" id="6"></div>
+      <div class="square" id="7"></div>
+      <div class="square" id="8"></div>
+    </div>
+
+    <button id="resetButton">Reset Game</button>
+  </div>
+
+  <audio id="moveSound" src="move.mp3"></audio>
+  <audio id="winSound" src="win.mp3"></audio>
+  <audio id="drawSound" src="draw.mp3"></audio>
+
+  <script src="game.js"></script>
+</body>
+</html>
